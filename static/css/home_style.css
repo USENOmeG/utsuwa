@@ -472,16 +472,14 @@ body {
     padding: 20px 40px;
     text-decoration: none;
     background-color: white;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 10px;
 }
 
 .contact-btn a:hover {
     background-color: whitesmoke;
-}
-.contact-btn h3 {
-    color: blue;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 
