@@ -1,0 +1,227 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="{% static 'css/base_style.css' %}"/>
+<script src="https://kit.fontawesome.com/e325191aeb.js" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+
+<div class="navbar">
+    <nav id="navBar">
+        <div class="navbar-logo">
+            <a href="/">
+                <img src="{% static 'images/logo/mark.png' %}" alt="logo">
+                <h3>utsüwa</h3>
+            </a>
+        </div>
+
+        <div class="navbar-mobile">
+            <div class="mobile-menu-icon"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="navbar-items">
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="/">会社概要&nbsp;<i class="fa-solid fa-chevron-right"></i></a></button>
+                    <div class="dropdown-content">
+                      <div class="row">
+                        <div class="column">
+                            <h3></h3>
+                            <a href="#">About US</a>
+                            <a href="/access">アクセス</a>
+                            <a href="/news">お知らせ</a>
+                            <a href="/qanda">Q&nbsp;&&nbsp;A</a>
+                            <a href="/contact">お問い合わせ</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="/services">サービス詳細&nbsp;<i class="fa-solid fa-chevron-right"></i></a></button>
+                    <div class="dropdown-content">
+                      <div class="row">
+                        <div class="column">
+                            <h3></h3>
+                            <a href="/business">ビジネス・ソリューション</a>
+                            <a href="/creative">クリエイティブ</a>
+                            <a href="/technology">テクノロジー・システム開発</a>
+                            <a href="/finances">ファイナンス</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="/news">お知らせ</a></button>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="/qanda">Q&nbsp;&&nbsp;A</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-menu">
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/">会社概要&nbsp;<i class="fa-solid fa-chevron-down"></i></a></button>
+                <div class="dropdown-content">
+                  <div class="row">
+                    <div class="column">
+                        <h3></h3>
+                        <a href="#">About US</a>
+                        <a href="/access">アクセス</a>
+                        <a href="/news">お知らせ</a>
+                        <a href="/qanda">Q&nbsp;&&nbsp;A</a>
+                        <a href="/contact">お問い合わせ</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/services">サービス詳細&nbsp;<i class="fa-solid fa-chevron-down"></i></a></button>
+                <div class="dropdown-content">
+                  <div class="row">
+                    <div class="column">
+                        <h3></h3>
+                        <a href="/business">ビジネス・ソリューション</a>
+                        <a href="/creative">クリエイティブ</a>
+                        <a href="/technology">テクノロジー・システム開発</a>
+                        <a href="/finances">ファイナンス</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/news">お知らせ</a></button>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/qanda">Q&nbsp;&&nbsp;A</a></button>
+            </div>
+
+        </div>
+
+        <div class="navbar-contact">
+            <a href="/contact"><h3>お問い合わせ</h3></a>
+        </div>
+    </nav>
+</div>
+
+
+<script>
+    const navBar = document.getElementById("navBar");
+    window.onscroll = function() {
+    if (window.scrollY > 22) {
+      navBar.classList.add("scrolled");
+    } else {
+      navBar.classList.remove("scrolled");
+    }
+  };
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    mobileMenuIcon.addEventListener('click', function () {
+        navbar.classList.toggle('mobile-nav-active');
+    });
+
+    const navItems = document.querySelectorAll('.navbar-items');
+    navItems.forEach(item => {
+        item.addEventListener('click', function () {
+            navbar.classList.remove('mobile-nav-active');
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        const isClickInsideMenu = navbar.contains(event.target) || mobileMenuIcon.contains(event.target);
+        if (!isClickInsideMenu) {
+            navbar.classList.remove('mobile-nav-active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+{% block content %}
+    <!--When extends base.html, extended content comes inside this-->
+{% endblock %}
+
+<!--Footer starts-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/footer_style.css' %}"/>
+    <script src="https://kit.fontawesome.com/e325191aeb.js" crossorigin="anonymous"></script>
+    <title>Footer</title>
+</head>
+
+<body>
+
+<div class="footer-container">
+    <div class="footer-main">
+
+        <div class="footer-content">
+            <h3>会社概要</h3>
+            <a href="/contact"><p>お問い合わせ</p></a>
+            <a href="/services"><p>サービス詳細</p></a>
+            <a href="#">About US</a>
+        </div>
+
+        <div class="footer-content">
+            <h3>会社概要</h3>
+            <a href="/news"><p>お知らせ</p></a>
+            <a href="/qanda"><p>Q&nbsp;&&nbsp;A</p></a>
+            <a href="/access"><p>アクセス</p></a>
+        </div>
+
+        <div class="footer-content">
+            <h3>Socials</h3>
+            <a href="#"><i class="fa-brands fa-twitter" style="font-size: 30px"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube" style="font-size: 30px"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="font-size: 30px"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-logo">
+        <p class="copyright">© utsuwa | 2024</p>
+    </div>
+</div>
+
+<div class="footer-container-mobile">
+        <div class="footer-main">
+
+            <div class="footer-content">
+                <h3>Easy links</h3>
+            </div>
+
+            <div class="footer-content">
+                <h3>会社概要</h3>
+            </div>
+
+            <div class="footer-content">
+                <h3>Socials</h3>
+                <a href="#"><i class="fa-brands fa-twitter" style="font-size: 30px"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="font-size: 30px"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="font-size: 30px"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-logo">
+            <p class="copyright">© utsuwa | 2024</p>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,488 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://kit.fontawesome.com/e325191aeb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'css/home_style.css' %}" >
+<title>Home</title>
+</head>
+
+<body>
+<div class="home-container">
+    
+        <div class="home-header">
+
+        <div class="header-text">
+            <h5>WELCOME TO</h5>
+            <h3>utsüwa</h3>
+            <h4>PROJECT</h4>
+        </div>
+
+        <div class="home-image">
+            <img src="{% static 'images/decoration/utsuwa-111.png' %}" alt="bowl">
+        </div>
+
+        <div class="home-tracks">
+            <div class="track-card">
+                <p>取引数</p>
+                <h3 style="color:#EC6B1E;">12&nbsp;<span>k+</span></h3>
+            </div>
+
+            <div class="track-card">
+                <p>コンサル歴</p>
+                <h3 style="color: blue">10&nbsp;<span>yrs+</span></h3>
+            </div>
+        </div>
+
+        <div class="home-paragraph">
+            <p>
+                utsüwa projectは、クライアントの事業を成功させるために生まれたプロジェクトです。
+                <br>
+                「イノベーティブな変化を起こすための新しいチーム = utsuwa(器)」をクライアントへ提供し、
+                <br>
+                共に成長をさせていくことをコミットします。
+            </p>
+        </div>
+    </div>
+
+        <div class="partners-container">
+            <div class="partners-header">
+                <h3>Our partners</h3>
+            </div>
+
+            <div class="scroller">
+                <ul class="tag-list scroller_inner">
+                    <li><img src="{% static 'images/icons/logo-au-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-softbank-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-redbull-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-mitsui-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-chanel-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-dazn.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-gmo-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-USJ-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-joysound-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-kodansha-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-docomo-01.jpg' %}" alt="icon"></li>
+                    <li><img src="{% static 'images/icons/logo-fujitsu-01.jpg' %}" alt="icon"></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <dvi class="tagline-container">
+            <div class="tagline-header">
+                <h3>我々を選ぶ&nbsp;<span style="color: #EC6B1E">3つ</span>&nbsp;の理由</h3>
+            </div>
+
+            <div class="tagline-content">
+                <div class="tagline-card">
+                    <h3>確かな実績</h3>
+                    <p>
+                        私たちは実績豊かな歴史を有し、具体的な成果を積み重ねてきました。
+                        お客様の目標達成と課題克服を一貫してサポートし、豊富なポートフォリオには専門知識を強調した効果的かつカスタマイズされた
+                        ソリューションを提供する成功事例が満載です。私たちを選ぶことは、実績豊かなパートナーを選び、
+                        これまでビジネスを成功に導いてきた実力派の連携を享受することです。お客様と共に歩み、
+                        未来に向けても確かな成果を追求していきます。
+                    </p>
+
+                    <a href="/services"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                </div>
+
+                <div class="tagline-card">
+                    <h3>課題に対するソリューション</h3>
+                    <p>
+                        私たちは現在の課題だけでなく将来の問題にも注視し、予測と備えに焦点を当てています。
+                        弊社は常に革新を追求し、業界のトレンドや新しいテクノロジーに素早く適応しています。
+                        当社を選ぶことで、お客様はビジネスを先導する最先端のソリューションにアクセスできます。
+                        私たちはお客様の持続的な成功を約束し、変化する状況を的確にナビゲートします。
+                        お客様とともに、未来に向けた革新的なビジョンを実現していくことをお約束いたします。
+                    </p>
+
+                    <a href="/services"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                </div>
+
+                <div class="tagline-card">
+                    <h3>顧客中心のアプローチ</h3>
+                    <p>
+                        私たちの根底にあるのは、各クライアントのユニークなニーズを理解し、それに応えるということです。
+                        協力的なパートナーシップを信条とし、お客様と密接に協力しながら、お客様の目標に沿った戦略を策定します。
+                        お客様中心のアプローチは、お客様の成功を最優先することを意味します。弊社をお選びいただくということは、
+                        オープンなコミュニケーション、透明性、そして卓越性の達成に向けた旅の共有に価値を置くコンサルティング会社をお選びいただくということです。
+                    </p>
+
+                    <a href="/services"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                </div>
+            </div>
+        </dvi>
+
+        <div class="home-content">
+
+            <div class="content-text">
+                <div class="content-header">
+                <h3>Philosophy</h3>
+                </div>
+                <h2>
+                    我々は定性と定量、論理と直感を大事にした
+                    Business, Creative, Technology
+                    という3つの軸でクライアントを成功へ導きます。
+                </h2>
+
+                <p>
+                    utsuwaは一般的なコンサルティング会社やベンダー会社のような
+                    一部分だけを担当するのではなく、 クライアントのビジネスを研究し、
+                    弊社のチームメンバーの強みを活かし、クライアントの新しい価値を生み出すために
+                    プロジェクトを立ち上げグロースしていくプロフェッショナルチームです。
+                </p>
+            </div>
+
+            <div class="content-image">
+                <img src="{% static 'images/decoration/campaign-creators-gMsnXqILjp4-unsplash.jpg' %}" alt="">
+            </div>
+        </div>
+
+        <div class="services-container">
+
+            <div class="text-container">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="cards-holder">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>ビジネス・ソリューション</h3>
+                        <p>
+                            クライアントに寄り添い、前提や過去の視点にとらわれない踏み込んだスタイルのビジネス開発を実行し、
+                            クライアントの事業成功や課題解決にコミットしていきます。パートナーシップのあり方は、
+                            ワンショットの課題解決施策の提案から持続的なコンサルティング形態まであらゆるクライアントの課題やニーズに合わせて対応していきます。
+                        </p>
+                    </div>
+
+                    <div class="service-link">
+                        <a href="/business"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>クリエイティブ</h3>
+                        <p>
+                            商品やサービスの成長・発展には「共感」が不可欠です。このため、
+                            商品やサービスの価値を伝えるクリエイティブが重要です。当社はマーケティングやブランディングの視点から、
+                            課題を解決し、価値を伝えるクリエイティブを提供します。
+                            これにより、お客様の商品やサービスが共感を生み出し、持続的な成功を支えます。
+                        </p>
+                    </div>
+
+                    <div class="service-link">
+                        <a href="/creative"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>テクノロジー・システム開発</h3>
+                        <p>
+                            クライアントの事業成功を目指し、マーケティングサービスに革新的手法を導入。
+                            複雑なユーザー獲得から戦略策定、可視化ツールの導入、データ分析、最適なメディア運用まで、
+                            包括的かつ先進的なソリューションを提供しています。これにより、
+                            時代の変化に即座に対応し、クライアントの競争力向上を支えます。
+                        </p>
+                    </div>
+
+                    <div class="service-link">
+                        <a href="/technology"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>ファイナンス</h3>
+                        <p>
+                            中小企業への銀行融資、ベンチャーの資金調達、M&Aアドバイスなど、多岐にわたるファイナンスサポートを提供しています。
+                            戦略法務の観点から時機に応じた資金調達を行い、融資や直接借入から仕組み金融、株式・社債活用まで広範な提案を行います。
+                            クライアントの状況や事業内容を把握し、最適な仕組みを提供します。
+                        </p>
+                    </div>
+
+                    <div class="service-link">
+                        <a href="/finances"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="serviceDetails-container">
+            <div class="serviceDetail-card">
+                <div class="detail-header">
+                    <h3>ビジネス・ソリューション</h3>
+
+                    <div class="service-tracker">
+                        <p>企画・戦略プロデュース</p>
+                        <p>ブランディング</p>
+                        <p>セールス</p>
+                        <p>マーケティング</p>
+                    </div>
+
+                    <p>
+                        クライアントに寄り添い、前提や過去の視点にとらわれない踏み込んだスタイルのビジネス開発を実行し、
+                        クライアントの事業 成功や課題解決にコミットしていきます。パートナーシップのあり方は、
+                        ワンショットの課題解決施策の提案から持続的な コンサルティング形態まであらゆる
+                        クライアントの課題やニーズに合わせて対応していきます。
+                        <br>
+                        パートナーのビジネス開発を成功へ導くために、3Cなど4Pなどのマーケティング・リサーチをしっかりと行い、
+                        定量的なデータアナリティクス(分析)から課題解決のためのソリューション企画を行い、
+                        実行のための体制を整えて1度実行して終わりではなくPDCAを繰り返し実行していきます。
+                    </p>
+
+                    <div class="detail-tracks">
+                        <h4>過去の実績</h4>
+
+                        <div class="tracks-container">
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-au-01.jpg' %}" alt="#">
+
+                                <p>
+                                    スマートパス、スマートパスプレミアム、
+                                    うたパスなどの有料サービスの加入促進戦略及び会員システム連携、
+                                    SNSマーケティングやOOH広告まで広範囲の事業領域を担う。
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-kodansha-01.jpg' %}" alt="#">
+
+                                <p>
+                                    様々な事業を生業とするメーカー様へのIP提案を行ない、
+                                    企業イメージ向上と共に自社サービスの販売数増加に貢献。
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-redbull-01.jpg' %}" alt="#">
+
+                                <p>Red Bull Studio、World Runなど、日本ブランチのマーケティング戦略を担当。
+                                    Crossfaithを起用して世界遺産輪王寺でのLiveや三浦大知によるBC One主題歌など、広範囲で制作。
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-joysound-01.jpg' %}" alt="#">
+
+                                <p>
+                                    化物語やキン肉マンなどのIPにて全国キャンペーンを担当。
+                                    その他にも割引施策や採点アプリ開発及びメニュー開発やノベルティ制作を実施。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-link">
+                        <a href="/business"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+                <div class="detail-image">
+                    <img src="{% static 'images/decoration/businessSolution-image-01.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <div class="serviceDetail-card-left">
+
+                <div class="detail-image-left">
+                    <img src="{% static 'images/decoration/creative-image.jpg' %}" alt="">
+                </div>
+                <div class="detail-header-left">
+                    <h3>クリエイティヴ</h3>
+
+                    <div class="service-tracker">
+                        <p>グラフィックデザイン</p>
+                        <p>ウェブデザイン</p>
+                        <p>UI/UX</p>
+                        <p>撮影・映像</p>
+                    </div>
+
+                    <div class="serviceDetail-icon">
+                        <img src="{% static 'images/icons/after-effects.png' %}" alt="icon">
+                        <img src="{% static 'images/icons/illustrator.png' %}" alt="icon">
+                        <img src="{% static 'images/icons/photoshop.png' %}" alt="icon">
+                        <img src="{% static 'images/icons/premiere-pro.png' %}" alt="icon">
+                        <img src="{% static 'images/icons/indesign.png' %}" alt="icon">
+                        <img src="{% static 'images/icons/xd.png' %}" alt="icon">
+                        <img src="{% static 'images/icons/logo-blender.png' %}" alt="icon">
+                    </div>
+
+                    <p>
+                        商品やサービスが成長・発展していくためには「共感」を得る必要があります。
+                        そのためには商品やサービスの価値を伝えるクリエイティヴが非常に大きな役割を果たします。
+                        そんな課題を解決するためマーケティング、ブランディングの視点から価値を伝えるクリエイティヴを提供します。
+                        <br>
+                        既存顧客の獲得だけにとらわれず、顧客がどのようにしてサービスや商品を購入するに至ったか、
+                        クライアントのファンになるに至ったかを可視化分析し、その情報からまだ潜在層にいる顧客をターゲティングし、
+                        新たな顧客やファンを創造していきま す。プロジェクトの短期的なKPIと長期的なKPIの両社を設定し管理し達成していきます。
+                    </p>
+
+                    <div class="detail-tracks">
+                        <h4>過去の実績</h4>
+
+                        <div class="tracks-container">
+                            <div class="tracks-card">
+                                <img src="../static/images/icons/logo-chanel-01.jpg" alt="#">
+
+                                <p>
+                                    店頭用コミニュケーションiPadアプリのデザイン制作を中心に、
+                                    ウェブサイト、DTP、ディスプレイ什器などの制作物を提供。
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="../static/images/icons/logo-USJ-01.jpg" alt="#">
+
+                                <p>
+                                    リアーナ、ビリー・アイリッシュ、アリアナ・ グランデ、AVICII、SHINee、椎名林檎などの日本国内用プロモーションのデザインを担当。
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="../static/images/icons/logo-dazn.jpg" alt="#">
+
+                                <p>
+                                    各スポーツとのタイアッププロモーションに関わるデザイン制作物。またオンライン広告物のデザイン提供。
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="../static/images/icons/logo-gmo-01.jpg" alt="#">
+
+                                <p>
+                                    モバイルゲーム事業に関わるすべてのデザイン業務(ゲーム内UIUX、販促物、企画戦略 etc.)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-link">
+                        <a href="/creative"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="serviceDetail-card">
+                <div class="detail-header">
+                    <h3>テクノロジー・システム開発</h3>
+
+                    <div class="service-tracker">
+                        <p>ウェブシステム開発・EC</p>
+                        <p>アプリ開発</p>
+                        <p>サーバー・ネットワーク構築</p>
+                    </div>
+
+                    <div class="serviceDetail-icon">
+                        <img src="{% static 'images/icons/icon-apple.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-android.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-aws.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-python.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-node.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-javascript.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-java.jpg' %}" alt="icon">
+                        <img src="{% static 'images/icons/icon-react.jpg' %}" alt="icon">
+                    </div>
+
+                    <p>
+                        最新のビジネスシステムから、大規模システム開発、モバイル関連までいかなるご要望にもお応えします。
+                        <br>
+                        これまでのマーケティングサービスにとらわれないあらゆる手法を活用してクライアントの事業成功にコミットしていきます。
+                        複雑化したユーザーを獲得するためのコミュニケーション戦略の策定やユーザーの行動・思考を可視化するためのツール導入支援、
+                        可視化したデータを分析し最適なメディアやクリエイティブを運用するためのアドテクノロジーマネジメントまで、
+                        あらゆる範囲のマーケティングソリューションを提供していきます。
+                    </p>
+
+                    <div class="detail-tracks">
+                        <h4>過去の実績</h4>
+
+                        <div class="tracks-container">
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-docomo-01.jpg' %}" alt="#">
+
+                                <p>
+                                    コンシェル試作品開発
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-fujitsu-01.jpg' %}" alt="#">
+
+                                <p>
+                                    屋内位置測位システムセンサー連携機能
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-softbank-01.jpg' %}" alt="#">
+
+                                <p>
+                                    ECシステム決済機能連携
+                                </p>
+                            </div>
+                            <div class="tracks-card">
+                                <img src="{% static 'images/icons/logo-mitsui-01.jpg' %}" alt="#">
+
+                                <p>
+                                    クリスマスツリーサイネージシステム構築
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-link">
+                        <a href="/technology"><h4>詳しくみる&nbsp;<i class="fa-solid fa-arrow-right"></i></h4></a>
+                    </div>
+                </div>
+                <div class="detail-image">
+                    <img src="{% static 'images/decoration/tech-image.jpg' %}" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="homeContacts-container">
+            <div class="contact-position">
+                <div class="contact-text">
+                    <h3>Contact Us</h3>
+                    <p>
+                        新しい可能性に挑戦し、一緒に新規事業やプロジェクトを立ち上げてみませんか。
+                        <br>
+                        共に成長し、未知の領域に挑戦することで、刺激的で意義ある経験を積むことができます。
+                        <br>
+                        お互いのアイディアやスキルを活かし、成功への道を共に築いていきましょう。
+                    </p>
+                </div>
+
+                <div class="contact-btn">
+                    <a href="/contact">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
+
+{% endblock content%}

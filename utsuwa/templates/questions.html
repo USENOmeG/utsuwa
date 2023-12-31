@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://kit.fontawesome.com/e325191aeb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'css/questions_style.css' %}" >
+<title></title>
+</head>
+
+<body>
+    <div class="questions-container">
+        <div class="questions-header">
+            <h3>Q&nbsp;&&nbsp;A</h3>
+            <p>
+                不明な点等ございましたら、以下より確認ください。
+            </p>
+        </div>
+
+        <div class="questions-content">
+            <div class="questions-card">
+                <div class="questionCard-header">
+                    <h3>・・・・・・・・したらどうすればいいのか</h3>
+                    <button class="answer-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+                <div class="question-answer">
+                    <p>
+                        昨日、青い空の下で、小さな村の子供たちは元気に遊んでいました。
+                        彼らは花畑で虫を追いかけたり、川で石を飛ばしたりして楽しんでいました。
+                        そこには古い神社もあり、風が優雅に鳥のさえずりを運んでいました。
+                        夕方になると、空はオレンジ色に染まり、村人たちは家に帰りました。
+                        夜になると、星が輝き、月がやさしく村を照らしました。
+                        静かな夜には、遠くの山々から虫の音が聞こえ、村全体が穏やかな雰囲気に包まれていました。
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions-card">
+                <div class="questionCard-header">
+                    <h3>・・・・・・・・ロシアにはどのように向かうべきか</h3>
+                    <button class="answer-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+                <div class="question-answer">
+                    <p>
+                        昨日、青い空の下で、小さな村の子供たちは元気に遊んでいました。
+                        彼らは花畑で虫を追いかけたり、川で石を飛ばしたりして楽しんでいました。
+                        そこには古い神社もあり、風が優雅に鳥のさえずりを運んでいました。
+                        夕方になると、空はオレンジ色に染まり、村人たちは家に帰りました。
+                        夜になると、星が輝き、月がやさしく村を照らしました。
+                        静かな夜には、遠くの山々から虫の音が聞こえ、村全体が穏やかな雰囲気に包まれていました。
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions-card">
+                <div class="questionCard-header">
+                    <h3>・・・・・・・・aaaabbbbbbcccc</h3>
+                    <button class="answer-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+                <div class="question-answer">
+                    <p>
+                        昨日、青い空の下で、小さな村の子供たちは元気に遊んでいました。
+                        彼らは花畑で虫を追いかけたり、川で石を飛ばしたりして楽しんでいました。
+                        そこには古い神社もあり、風が優雅に鳥のさえずりを運んでいました。
+                        夕方になると、空はオレンジ色に染まり、村人たちは家に帰りました。
+                        夜になると、星が輝き、月がやさしく村を照らしました。
+                        静かな夜には、遠くの山々から虫の音が聞こえ、村全体が穏やかな雰囲気に包まれていました。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var toggleBtns = document.querySelectorAll('.answer-btn');
+
+        toggleBtns.forEach(function (toggleBtn) {
+
+            var answerColumn = toggleBtn.closest('.questions-card').querySelector('.question-answer');
+
+            toggleBtn.addEventListener('click', function () {
+
+                answerColumn.classList.toggle('active');
+                console.log('Answer button was clicked');
+            });
+        });
+    });
+</script>
+
+
+
+</body>
+
+{% endblock content %}

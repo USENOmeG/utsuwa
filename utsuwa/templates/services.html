@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://kit.fontawesome.com/e325191aeb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'css/services_style.css' %}" >
+<title></title>
+</head>
+
+<body>
+    <div class="services-container">
+        <div class="services-header">
+            <h3>サービス詳細</h3>
+        </div>
+
+        <div class="service-content">
+            <div class="service-holder">
+                <div class="service-card">
+                    <a href="/business">
+                        <h3>ビジネス・コンサルティング</h3>
+                        <p>
+                            戦略的な洞察と革新的なソリューションを通じて成功を促進し、当社のビジネスコンサルティングサービスは、
+                            組織が現代の動向に適応し、持続可能な成長を実現する手助けとなります。
+                        </p>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <a href="/creative">
+                        <h3>クリエイティブ</h3>
+                        <p>
+                            創造力豊かなアプローチで、ビジネスコンサルティングを通じて新しいアイデアと戦略を提供し、
+                            お客様の課題に独創的かつ効果的な解決策を提案します。
+                        </p>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <a href="/technology">
+                        <h3>テクノロジー・システム開発</h3>
+                        <p>
+                            テクノロジーの進化を活かし、最新の専門知識と革新的なテクノロジーソリューションを組み合わせ、
+                            お客様のビジネスにテクノロジーを活用して効果的な変革をもたらします。
+                        </p>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <a href="/finances">
+                        <h3>ファイナンス</h3>
+                        <p>
+                            財務分野での深い専門知識と洞察に基づき、我々のファイナンスコンサルティングサービスは、
+                            経済的な洞察と戦略的な資産管理を通じて、クライアントの財務の健全性と持続可能な成長を確保します。
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+{% endblock content %}
