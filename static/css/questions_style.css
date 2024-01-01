@@ -74,3 +74,16 @@ body {
 .question-answer.active {
     display: block;
 }
+
+@media screen and (max-width: 760px) {
+
+    .questions-container {
+        padding: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .questions-header h3,
+    .questions-header p {
+        text-align: center;
+    }
+}
