@@ -22,7 +22,10 @@ body {
 .contact-top {
     padding-top: 100px;
     padding-bottom: 150px;
-    background-color: lightskyblue;
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .contact-text h3 {
@@ -33,6 +36,7 @@ body {
 }
 
 .contact-text p {
+    padding-inline: 20px;
     margin-top: 30px;
     font-size: 20px;
     font-weight: bold;
@@ -43,8 +47,9 @@ body {
 .contact-but {
     padding-inline: 50px;
     background-color: white;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 20px;
 }
 
 .contact-card {
@@ -54,7 +59,7 @@ body {
     max-width: 650px;
     padding: 30px;
     border-radius: 10px;
-    background-color: #ffd7b5;
+    background-color: #f8b500;
     flex: 1;
 }
 
@@ -65,6 +70,8 @@ body {
 }
 
 .contact-card p {
+    color: white;
+    font-weight: bold;
     margin-top: 20px;
 }
 
@@ -73,6 +80,7 @@ body {
 }
 
 .contact-card a p {
+    color: blue;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -81,6 +89,17 @@ body {
 
 .contact-card a i {
     text-align: center;
+}
+
+@media screen and (max-width: 760px){
+    .contact-but {
+        padding-inline: 20px;
+        display: block;
+    }
+
+    .contact-card {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 360px){
