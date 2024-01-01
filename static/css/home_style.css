@@ -561,6 +561,23 @@ form input {
     text-decoration: none;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .content-image img,
+    .detail-image img,
+    .detail-image-left img {
+        scale: .8; opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    @keyframes fade-in {
+        from {scale: .8; opacity: 0;}
+        to {scale: 1; opacity: 1;}
+    }
+}
+
+
 @media (max-width: 1700px) {
 
     .header-text {
