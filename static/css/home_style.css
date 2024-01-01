@@ -11,6 +11,14 @@ body {
     justify-content: center;
     background-color: white;
     max-width: 100%;
+    --dot-bg: white;
+    --dot-color: #282d32;
+    --dot-size: 1px;
+    --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
 }
 
 .home-container {
@@ -160,7 +168,7 @@ body {
 
 .tag-list li {
     padding: 16px;
-    background: transparent;
+    background: white;
     border-radius: 8px;
     box-shadow: 0 8px 16px -4px #282d32;
 }
