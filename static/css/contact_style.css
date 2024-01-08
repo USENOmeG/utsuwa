@@ -47,9 +47,8 @@ body {
 .contact-but {
     padding-inline: 50px;
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .contact-card {
