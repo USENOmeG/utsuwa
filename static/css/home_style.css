@@ -229,7 +229,6 @@ body {
     max-width: 550px;
     width: 100%;
     flex: 1;
-    box-shadow: 0 0 5px #282d32;
 }
 
 .tagline-card h3 {
@@ -335,7 +334,6 @@ body {
     width: 100%;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 0 5px #282d32;
 }
 
 .service-icon i {
